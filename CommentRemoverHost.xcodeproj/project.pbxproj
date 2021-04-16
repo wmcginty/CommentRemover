@@ -11,26 +11,48 @@
 		B4FB0A642629107200F34D81 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FB0A632629107200F34D81 /* ContentView.swift */; };
 		B4FB0A662629107400F34D81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4FB0A652629107400F34D81 /* Assets.xcassets */; };
 		B4FB0A692629107400F34D81 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4FB0A682629107400F34D81 /* Preview Assets.xcassets */; };
-		B4FB0A752629107400F34D81 /* CommentRemoverHostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FB0A742629107400F34D81 /* CommentRemoverHostTests.swift */; };
-		B4FB0A802629107400F34D81 /* CommentRemoverHostUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FB0A7F2629107400F34D81 /* CommentRemoverHostUITests.swift */; };
+		B4FB0A972629107F00F34D81 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FB0A962629107F00F34D81 /* Cocoa.framework */; };
+		B4FB0A9C2629107F00F34D81 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FB0A9B2629107F00F34D81 /* SourceEditorExtension.swift */; };
+		B4FB0A9E2629107F00F34D81 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FB0A9D2629107F00F34D81 /* SourceEditorCommand.swift */; };
+		B4FB0AA32629107F00F34D81 /* CommentRemover.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B4FB0A942629107F00F34D81 /* CommentRemover.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B4FB0AB9262910C400F34D81 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FB0A982629107F00F34D81 /* XcodeKit.framework */; };
+		B4FB0ABA262910C400F34D81 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4FB0A982629107F00F34D81 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B4FB0A712629107400F34D81 /* PBXContainerItemProxy */ = {
+		B4FB0AA12629107F00F34D81 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B4FB0A562629107200F34D81 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B4FB0A5D2629107200F34D81;
-			remoteInfo = CommentRemoverHost;
-		};
-		B4FB0A7C2629107400F34D81 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B4FB0A562629107200F34D81 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B4FB0A5D2629107200F34D81;
-			remoteInfo = CommentRemoverHost;
+			remoteGlobalIDString = B4FB0A932629107F00F34D81;
+			remoteInfo = CommentRemover;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B4FB0AA72629107F00F34D81 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B4FB0AA32629107F00F34D81 /* CommentRemover.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4FB0ABB262910C400F34D81 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B4FB0ABA262910C400F34D81 /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B4FB0A5E2629107200F34D81 /* CommentRemoverHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommentRemoverHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,12 +62,13 @@
 		B4FB0A682629107400F34D81 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B4FB0A6A2629107400F34D81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4FB0A6B2629107400F34D81 /* CommentRemoverHost.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CommentRemoverHost.entitlements; sourceTree = "<group>"; };
-		B4FB0A702629107400F34D81 /* CommentRemoverHostTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommentRemoverHostTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4FB0A742629107400F34D81 /* CommentRemoverHostTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRemoverHostTests.swift; sourceTree = "<group>"; };
-		B4FB0A762629107400F34D81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B4FB0A7B2629107400F34D81 /* CommentRemoverHostUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommentRemoverHostUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4FB0A7F2629107400F34D81 /* CommentRemoverHostUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRemoverHostUITests.swift; sourceTree = "<group>"; };
-		B4FB0A812629107400F34D81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4FB0A942629107F00F34D81 /* CommentRemover.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CommentRemover.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4FB0A962629107F00F34D81 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B4FB0A982629107F00F34D81 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+		B4FB0A9B2629107F00F34D81 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		B4FB0A9D2629107F00F34D81 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		B4FB0A9F2629107F00F34D81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4FB0AA02629107F00F34D81 /* CommentRemover.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CommentRemover.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,17 +79,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B4FB0A6D2629107400F34D81 /* Frameworks */ = {
+		B4FB0A912629107F00F34D81 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B4FB0A782629107400F34D81 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				B4FB0A972629107F00F34D81 /* Cocoa.framework in Frameworks */,
+				B4FB0AB9262910C400F34D81 /* XcodeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,8 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				B4FB0A602629107200F34D81 /* CommentRemoverHost */,
-				B4FB0A732629107400F34D81 /* CommentRemoverHostTests */,
-				B4FB0A7E2629107400F34D81 /* CommentRemoverHostUITests */,
+				B4FB0A9A2629107F00F34D81 /* CommentRemover */,
+				B4FB0A952629107F00F34D81 /* Frameworks */,
 				B4FB0A5F2629107200F34D81 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,8 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				B4FB0A5E2629107200F34D81 /* CommentRemoverHost.app */,
-				B4FB0A702629107400F34D81 /* CommentRemoverHostTests.xctest */,
-				B4FB0A7B2629107400F34D81 /* CommentRemoverHostUITests.xctest */,
+				B4FB0A942629107F00F34D81 /* CommentRemover.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,22 +131,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		B4FB0A732629107400F34D81 /* CommentRemoverHostTests */ = {
+		B4FB0A952629107F00F34D81 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B4FB0A742629107400F34D81 /* CommentRemoverHostTests.swift */,
-				B4FB0A762629107400F34D81 /* Info.plist */,
+				B4FB0A962629107F00F34D81 /* Cocoa.framework */,
+				B4FB0A982629107F00F34D81 /* XcodeKit.framework */,
 			);
-			path = CommentRemoverHostTests;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B4FB0A7E2629107400F34D81 /* CommentRemoverHostUITests */ = {
+		B4FB0A9A2629107F00F34D81 /* CommentRemover */ = {
 			isa = PBXGroup;
 			children = (
-				B4FB0A7F2629107400F34D81 /* CommentRemoverHostUITests.swift */,
-				B4FB0A812629107400F34D81 /* Info.plist */,
+				B4FB0A9B2629107F00F34D81 /* SourceEditorExtension.swift */,
+				B4FB0A9D2629107F00F34D81 /* SourceEditorCommand.swift */,
+				B4FB0A9F2629107F00F34D81 /* Info.plist */,
+				B4FB0AA02629107F00F34D81 /* CommentRemover.entitlements */,
 			);
-			path = CommentRemoverHostUITests;
+			path = CommentRemover;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,51 +161,35 @@
 				B4FB0A5A2629107200F34D81 /* Sources */,
 				B4FB0A5B2629107200F34D81 /* Frameworks */,
 				B4FB0A5C2629107200F34D81 /* Resources */,
+				B4FB0AA72629107F00F34D81 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B4FB0AA22629107F00F34D81 /* PBXTargetDependency */,
 			);
 			name = CommentRemoverHost;
 			productName = CommentRemoverHost;
 			productReference = B4FB0A5E2629107200F34D81 /* CommentRemoverHost.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B4FB0A6F2629107400F34D81 /* CommentRemoverHostTests */ = {
+		B4FB0A932629107F00F34D81 /* CommentRemover */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B4FB0A872629107400F34D81 /* Build configuration list for PBXNativeTarget "CommentRemoverHostTests" */;
+			buildConfigurationList = B4FB0AA42629107F00F34D81 /* Build configuration list for PBXNativeTarget "CommentRemover" */;
 			buildPhases = (
-				B4FB0A6C2629107400F34D81 /* Sources */,
-				B4FB0A6D2629107400F34D81 /* Frameworks */,
-				B4FB0A6E2629107400F34D81 /* Resources */,
+				B4FB0A902629107F00F34D81 /* Sources */,
+				B4FB0A912629107F00F34D81 /* Frameworks */,
+				B4FB0A922629107F00F34D81 /* Resources */,
+				B4FB0ABB262910C400F34D81 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B4FB0A722629107400F34D81 /* PBXTargetDependency */,
 			);
-			name = CommentRemoverHostTests;
-			productName = CommentRemoverHostTests;
-			productReference = B4FB0A702629107400F34D81 /* CommentRemoverHostTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		B4FB0A7A2629107400F34D81 /* CommentRemoverHostUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B4FB0A8A2629107400F34D81 /* Build configuration list for PBXNativeTarget "CommentRemoverHostUITests" */;
-			buildPhases = (
-				B4FB0A772629107400F34D81 /* Sources */,
-				B4FB0A782629107400F34D81 /* Frameworks */,
-				B4FB0A792629107400F34D81 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B4FB0A7D2629107400F34D81 /* PBXTargetDependency */,
-			);
-			name = CommentRemoverHostUITests;
-			productName = CommentRemoverHostUITests;
-			productReference = B4FB0A7B2629107400F34D81 /* CommentRemoverHostUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
+			name = CommentRemover;
+			productName = CommentRemover;
+			productReference = B4FB0A942629107F00F34D81 /* CommentRemover.appex */;
+			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -200,13 +203,8 @@
 					B4FB0A5D2629107200F34D81 = {
 						CreatedOnToolsVersion = 12.4;
 					};
-					B4FB0A6F2629107400F34D81 = {
+					B4FB0A932629107F00F34D81 = {
 						CreatedOnToolsVersion = 12.4;
-						TestTargetID = B4FB0A5D2629107200F34D81;
-					};
-					B4FB0A7A2629107400F34D81 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = B4FB0A5D2629107200F34D81;
 					};
 				};
 			};
@@ -224,8 +222,7 @@
 			projectRoot = "";
 			targets = (
 				B4FB0A5D2629107200F34D81 /* CommentRemoverHost */,
-				B4FB0A6F2629107400F34D81 /* CommentRemoverHostTests */,
-				B4FB0A7A2629107400F34D81 /* CommentRemoverHostUITests */,
+				B4FB0A932629107F00F34D81 /* CommentRemover */,
 			);
 		};
 /* End PBXProject section */
@@ -240,14 +237,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B4FB0A6E2629107400F34D81 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B4FB0A792629107400F34D81 /* Resources */ = {
+		B4FB0A922629107F00F34D81 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -266,34 +256,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B4FB0A6C2629107400F34D81 /* Sources */ = {
+		B4FB0A902629107F00F34D81 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4FB0A752629107400F34D81 /* CommentRemoverHostTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B4FB0A772629107400F34D81 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B4FB0A802629107400F34D81 /* CommentRemoverHostUITests.swift in Sources */,
+				B4FB0A9C2629107F00F34D81 /* SourceEditorExtension.swift in Sources */,
+				B4FB0A9E2629107F00F34D81 /* SourceEditorCommand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B4FB0A722629107400F34D81 /* PBXTargetDependency */ = {
+		B4FB0AA22629107F00F34D81 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B4FB0A5D2629107200F34D81 /* CommentRemoverHost */;
-			targetProxy = B4FB0A712629107400F34D81 /* PBXContainerItemProxy */;
-		};
-		B4FB0A7D2629107400F34D81 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B4FB0A5D2629107200F34D81 /* CommentRemoverHost */;
-			targetProxy = B4FB0A7C2629107400F34D81 /* PBXContainerItemProxy */;
+			target = B4FB0A932629107F00F34D81 /* CommentRemover */;
+			targetProxy = B4FB0AA12629107F00F34D81 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -416,6 +394,7 @@
 		B4FB0A852629107400F34D81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = CommentRemoverHost/CommentRemoverHost.entitlements;
@@ -440,6 +419,7 @@
 		B4FB0A862629107400F34D81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = CommentRemoverHost/CommentRemoverHost.entitlements;
@@ -461,87 +441,45 @@
 			};
 			name = Release;
 		};
-		B4FB0A882629107400F34D81 /* Debug */ = {
+		B4FB0AA52629107F00F34D81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_ENTITLEMENTS = CommentRemover/CommentRemover.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9W2C69WDZE;
-				INFOPLIST_FILE = CommentRemoverHostTests/Info.plist;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = CommentRemover/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mcginty.will.CommentRemoverHostTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcginty.will.CommentRemoverHost.CommentRemover;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CommentRemoverHost.app/Contents/MacOS/CommentRemoverHost";
 			};
 			name = Debug;
 		};
-		B4FB0A892629107400F34D81 /* Release */ = {
+		B4FB0AA62629107F00F34D81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_ENTITLEMENTS = CommentRemover/CommentRemover.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9W2C69WDZE;
-				INFOPLIST_FILE = CommentRemoverHostTests/Info.plist;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = CommentRemover/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mcginty.will.CommentRemoverHostTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcginty.will.CommentRemoverHost.CommentRemover;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CommentRemoverHost.app/Contents/MacOS/CommentRemoverHost";
-			};
-			name = Release;
-		};
-		B4FB0A8B2629107400F34D81 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 9W2C69WDZE;
-				INFOPLIST_FILE = CommentRemoverHostUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mcginty.will.CommentRemoverHostUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = CommentRemoverHost;
-			};
-			name = Debug;
-		};
-		B4FB0A8C2629107400F34D81 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 9W2C69WDZE;
-				INFOPLIST_FILE = CommentRemoverHostUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mcginty.will.CommentRemoverHostUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = CommentRemoverHost;
 			};
 			name = Release;
 		};
@@ -566,20 +504,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B4FB0A872629107400F34D81 /* Build configuration list for PBXNativeTarget "CommentRemoverHostTests" */ = {
+		B4FB0AA42629107F00F34D81 /* Build configuration list for PBXNativeTarget "CommentRemover" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B4FB0A882629107400F34D81 /* Debug */,
-				B4FB0A892629107400F34D81 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B4FB0A8A2629107400F34D81 /* Build configuration list for PBXNativeTarget "CommentRemoverHostUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B4FB0A8B2629107400F34D81 /* Debug */,
-				B4FB0A8C2629107400F34D81 /* Release */,
+				B4FB0AA52629107F00F34D81 /* Debug */,
+				B4FB0AA62629107F00F34D81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
